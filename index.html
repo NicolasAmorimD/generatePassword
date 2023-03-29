@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Senha</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
+
 <body>
-    <h1>Gerador de Senha</h1>
+    <main>
+        <section class="top-conteiner">
+            <h1 class="title">Gerador de Senha</h1>
+            <p class="sub-title">Utilize um gerador de senha para gerar uma senha forte e segura.</p>
+        </section>
 
-    <p>Utilize um gerador de senha para gerar uma senha forte e segura.</p>
+        <section class="box">
+            <div class="password">
+                <div class="text">
+                    <input type="text" name="password" id="password">
+                </div>
 
-    <input type="text" name="password" id="password">
+                <div class="actions">
+                    <button class="copy">
+                        <img src="assets/copy.svg" alt="copiar senha" width="40">
+                    </button>
+                    <button class="renew">
+                        <img src="assets/renew.svg" alt="gerar nova senha" width="40">
+                    </button>
+                </div>
+            </div>
+        </section>
 
-    <input type="range" name="password-length" id="password-length" value="8" min="4" max="64">
 
-    <button id="copy">Copiar senha</button>
+        <input type="range" name="password-length" id="password-length" value="8" min="4" max="64">
+        <button id="copy">Copiar senha</button>
+    </main>
 
 
 
@@ -27,4 +51,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
