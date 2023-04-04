@@ -64,6 +64,10 @@ main {
     user-select: none;
 }
 
+.password .text input.font-sm {
+    font-size: 2rem;
+}
+
 .password .actions button {
     background-color: transparent;
     border: none;
@@ -75,6 +79,7 @@ main {
     background-color: #ddd;
     height: 10px;
     border-radius: 0 0 8px 8px;
+    transition: .3s;
 }
 
 .security-indicator .bar {
@@ -212,4 +217,23 @@ main {
 
 .button-conteiner button:hover {
     background-color: #9b51e0;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .password {
+        padding: .7rem;
+    }
+
+    .password .text input {
+        font-size: 2.5rem;
+    }
+
+    .password .text input.font-m {
+        font-size: 2rem;
+    }
+
+    .password .text input.font-sm {
+        font-size: 1.5rem;
+    }
 }
